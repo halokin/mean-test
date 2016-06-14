@@ -1,0 +1,14 @@
+<h1>test vue</h1>
+
+<input type="text" placeholder="champ1" ng-model="champ1">
+<input type="text" placeholder="champ2" ng-model="champ2">
+
+<button ng-click="valider()">valider</button>
+
+<div class="" ng-repeat="test in tests">
+	<input type="text" ng-model="test.champ1">
+	<input type="text" ng-model="test.champ2">
+
+	<button ng-click="update(test)">update</button>
+	<button ng-click="delete(test._id)">delete</button>
+</div>

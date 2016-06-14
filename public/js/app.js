@@ -11,6 +11,10 @@ function config($routeProvider) {
 			templateUrl: 'views/inscription.html',
 			controller: 'inscriptionController'
 		})
+		.when('/test', {
+			templateUrl: 'views/test.html',
+			controller: 'testController'
+		})
 		.otherwise({
 			redirectTo: '/'
 		});
@@ -25,8 +29,10 @@ angular.module('app', ['ngRoute'])
     .config(config)
     .controller('mainController', mainController)
     .controller('inscriptionController', inscriptionController)
+    .controller('testController', testController)
     .service('todoService', todoService)
     .service('inscriptionService', inscriptionService)
+    .service('testService', testService)
     /*.factory('', )*/
     .run(run);
 

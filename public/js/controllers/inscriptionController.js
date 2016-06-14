@@ -5,7 +5,7 @@ function inscriptionController ($scope, inscriptionService, $window) {
 			$scope.users = res.data;
 		})
 	}
-	load();
+	load(); 
 	 // a=2;
 	$scope.valider = function (){
 		var data = {};
