@@ -1,0 +1,13 @@
+<h1>Inscription</h1>
+
+
+<input type="text" placeholder="nom" ng-model="nom">
+<input type="text" placeholder="prenom" ng-model="prenom">
+<button type="button" name="button" ng-click="valider()">valider</button>
+
+<div class="" ng-repeat= "user in users">
+	<input type="text" ng-model="user.nom">
+	<input type="text" ng-model="user.prenom">
+	<button ng-click="update(user)">update</button>
+	<button ng-click="delete(user._id)">delete</button>
+</div>
